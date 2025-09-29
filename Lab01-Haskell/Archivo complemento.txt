@@ -1,0 +1,30 @@
+1.
+Haskell es un lenguaje fuertemente tipado porque cada valor y expresión tiene un tipo bien definido que se verifica en tiempo de compilación, lo que evita muchos errores y garantiza consistencia en el código. Además, es evaluado perezosamente porque no calcula el valor de una expresión hasta que realmente se necesita, permitiendo trabajar con estructuras infinitas y optimizar el rendimiento al evitar cómputos innecesarios.
+
+En Haskell, Int representa números enteros dentro de un rango fijo, por lo que no admite decimales y puede desbordarse si se excede el límite. En cambio, Float representa números en punto flotante de precisión simple, permitiendo manejar valores con decimales y muy grandes o pequeños, aunque con posibles errores de redondeo debido a su representación aproximada.
+
+2. 
+La expresión [1..10] genera una lista de enteros consecutivos desde el 1 hasta el 10, es decir, [1,2,3,4,5,6,7,8,9,10]. Su relación con la evaluación perezosa es que Haskell no construye toda la lista de inmediato, sino que va generando sus elementos solo cuando son necesarios; por ejemplo, si usamos take 3 [1..10], Haskell solo calcula los primeros tres valores sin preocuparse por el resto. Esto mismo permite trabajar también con listas infinitas como [1..].
+3.
+	1.
+		a. sumaCuadrados x y = x*x + y*y
+		b. dobleLista = map (*2)
+
+
+4.
+	1.
+		a. Predicción: [2,4,6,8,10] 
+		b. La predicción que hicimos si fue correcta
+		c. [1..] no causa un ciclo infinito porque el take, solamente le pide los primeros 5 valores.
+
+	2.
+		a. Lo que sucede es que primero suma 5+7=12 siendo esto x y luego 4*3=12 siendo esto y entonces entra a la condicion y evalua 12>10 como es false pasa al else y el else dice que x+y entonces es 12+1
+
+Retrospectiva.
+
+Aproximadamente 2 horas
+Finalizado porque lo podimos resolver
+Lograr aprender como utilizar la recursividad en este lenguaje y a pesar de que fue poco se aprendio algo de expresiones de lambda
+El mayor problema fue las tuplas porque no teniamos el conocimiento de las tuplas entonces no sabiamos como resolver el problema. Tuvimos que hablar con el profesor para que nos explicara
+Lo major que hicimos fue que ambos aportamos ideas para poder resolverlos. Debemos mejorar un poco mas la logica para hacerlos mas rapido
+Lo que mas usamos fue la documentacion de Haskell para poder saber que podiamos usar: https://www.haskell.org/documentation/. Tambien nos apoyamos de las diapositivas del profesor
